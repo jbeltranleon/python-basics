@@ -1,4 +1,5 @@
 from datetime import datetime
+from datetime import timedelta
 from datetime import date
 from dateutil.relativedelta import relativedelta
 
@@ -32,10 +33,16 @@ texto_fecha = texto_fecha[:-5]
 formatting = "%B %d %Y %I:%M%p "
 
 #Convertimos el texto de la fecha a formato fecha
-print datetime.strptime(texto_fecha, formatting)
+fecha_formateada = datetime.strptime(texto_fecha, formatting)
+print fecha_formateada
+
+#Asi podemos sumar horas
+print fecha_formateada + timedelta(hours=12)
+print fecha_formateada + relativedelta(hours=12)
 
 
+# sumar anios y dias
+print "La fecha de hoy mas 3 anios 34 dias es %s" % (fecha + relativedelta(days=+34, years=+3))
 
-
-
-
+print "La fecha en formato internacional es %s" % justoAhora.isoformat()
+print "La fecha en formato UTC es %s" % justoAhora.utcnow()
