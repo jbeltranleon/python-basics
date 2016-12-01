@@ -23,7 +23,8 @@ mascota = [edad, altura, cromosomas, domestico, especie]
 print mascota
 
 # Diccionario de datos dict 
-propietario = {'nombre' : 'Jhon'}
+propietario = {'nombre' : 'Jhon', 'edad' : 19}
+print propietario
 
 # Tupla que es una lista que no se puede editar tuple
 random = ('a', 1, 3.4)
