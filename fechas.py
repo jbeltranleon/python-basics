@@ -1,8 +1,9 @@
-import datetime
+from datetime import datetime
+from datetime import date
 from dateutil.relativedelta import relativedelta
 
-fecha = datetime.date.today()
-justoAhora = datetime.datetime.now()
+fecha = date.today()
+justoAhora = datetime.now()
 
 print fecha
 print justoAhora
@@ -31,7 +32,7 @@ texto_fecha = texto_fecha[:-5]
 formatting = "%B %d %Y %I:%M%p "
 
 #Convertimos el texto de la fecha a formato fecha
-print datetime.datetime.strptime(texto_fecha, formatting)
+print datetime.strptime(texto_fecha, formatting)
 
 
 
