@@ -34,6 +34,10 @@ dibujar(4)
 
 notas = ["Fa", "Sol", "La", "Si", "Do", "Re", "Mi"]
 
-# Uso un for para recorrer la lista e imprimir la funcion con todos los signos
+# Uso un for para recorrer la lista e imprimir la funcion con todas las notas
 for nota in notas:
     print nota
+
+#For con rangos
+for i in range(10):
+	print "Numero %i" % i
