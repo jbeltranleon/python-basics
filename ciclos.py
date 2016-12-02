@@ -41,3 +41,6 @@ for nota in notas:
 #For con rangos
 for i in range(0, 15,3):
 	print "Numero %i" % i
+
+for i in "Spelling":
+	print "%s" % i
