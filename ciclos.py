@@ -39,5 +39,5 @@ for nota in notas:
     print nota
 
 #For con rangos
-for i in range(10):
+for i in range(0, 15,3):
 	print "Numero %i" % i
