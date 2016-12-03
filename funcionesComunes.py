@@ -32,3 +32,9 @@ print "Aiudaaa %s " % help(map)
 print "Hola Tarola " * 12
 
 
+#Para saber si algo está en una string
+frase = "En la sintetica de las palmas"
+
+print "sintetica" in frase
+
+
