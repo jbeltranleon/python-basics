@@ -9,10 +9,10 @@ import random
 def importantDecision(destino):
     if destino % 2 == 0:
         print "Los astros se alinean a tu favor, la respuesta es si"
-    elif destino == 1:
+    elif destino % 2 != 0:
         print "¡Virgen del carmen, no lo hagas!"
     else:
-        print "Haz lo que quieras"
+        print "Vaia esto nunca va a aparecer!"
 
 importantDecision((random.randrange(10))+1)
 

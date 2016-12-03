@@ -29,6 +29,6 @@ def horoscopo(signo):
 signos = ['Picis', 'Aries', 'Capricornio']
 
 # Uso un for para recorrer la lista e imprimir la funcion con todos los signos
-for signo in signos:
-    print horoscopo(signo)
+for sdfghj in signos:
+    print horoscopo(sdfghj)
     
