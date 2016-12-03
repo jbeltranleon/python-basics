@@ -12,7 +12,7 @@ def importantDecision(destino):
     elif destino == 1:
         print "¡Virgen del carmen, no lo hagas!"
     else:
-        print "Esta opcion desafia las leyes de la logica, nunca saldrá"
+        print "Haz lo que quieras"
 
 importantDecision((random.randrange(10))+1)
 
