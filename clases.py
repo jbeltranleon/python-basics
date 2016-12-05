@@ -4,7 +4,14 @@ import random
 import time
 from time import sleep
 
-class BolaDeCristal(object):
+class Dios(object):
+    def __init__(self, dios):
+        self.dios = dios
+
+    def bendecir(self):
+        print "io te bendigo papu"
+
+class BolaDeCristal(Dios):
     def __init__(self, nombre,destino):
         self.nombre = nombre
         self.destino = destino
@@ -19,6 +26,8 @@ class BolaDeCristal(object):
             print "Vaia esto nunca va a aparecer!"
 
 
+ala = Dios("Señor Alá")
+
 nombre = raw_input("¿Como te llamas?\n")
 vaino = BolaDeCristal(nombre,random.randrange(1,10))
 
@@ -28,3 +37,9 @@ print "¿Oh astros que debe hacer este mortal?\n"
 sleep(2)
 
 vaino.adivinar()
+
+bendicion = raw_input("¿Quieres que te bendiga?\n")
+if bendicion == 'si':
+    vaino.bendecir()
+else:
+    print "Entonces jodete"
