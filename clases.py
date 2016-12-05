@@ -5,8 +5,8 @@ import time
 from time import sleep
 
 class Dios(object):
-    def __init__(self, dios):
-        self.dios = dios
+    # def __init__(self, dios):
+    #     self.dios = dios
 
     def bendecir(self):
         print "io te bendigo papu"
@@ -26,7 +26,7 @@ class BolaDeCristal(Dios):
             print "Vaia esto nunca va a aparecer!"
 
 
-ala = Dios("Señor Alá")
+# ala = Dios("Señor Alá")
 
 nombre = raw_input("¿Como te llamas?\n")
 vaino = BolaDeCristal(nombre,random.randrange(1,10))
