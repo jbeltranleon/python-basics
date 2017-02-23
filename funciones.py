@@ -5,9 +5,9 @@ def saludar():
 	return "Hola"
 
 def despedir():
-	print "Chao"
+	print ("Chao")
 
-print saludar()
+print (saludar())
 despedir()
 
 # Funcion con parametros de entrada
@@ -16,7 +16,7 @@ def areaTriangulo(base, altura):
     return resultado
 
 resultado = areaTriangulo(4.0,4)
-print resultado
+print (resultado)
 
 
 #Concatenando
@@ -29,6 +29,6 @@ def horoscopo(signo):
 signos = ['Picis', 'Aries', 'Capricornio']
 
 # Uso un for para recorrer la lista e imprimir la funcion con todos los signos
-for sdfghj in signos:
-    print horoscopo(sdfghj)
+for signo in signos:
+    print (horoscopo(signo))
     
