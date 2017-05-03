@@ -31,3 +31,4 @@ random = ('a', 1, 3.4)
 
 """ Esta vaina es una
 Anotacion o comentario """
+print type(2) #Para saber el tipo de dato
