@@ -2,17 +2,17 @@
 
 
 
-#If, seguido de tu condición, elif para anidar mas condiciones, 
+#If, seguido de tu condición, elif para anidar mas condiciones,
 #else nos ayuda a crear una condición por defecto en caso de no cumpla nada anterior:
 import random
 
 def importantDecision(destino):
     if destino % 2 == 0:
-        print "Los astros se alinean a tu favor, la respuesta es si"
+        print ("Los astros se alinean a tu favor, la respuesta es si")
     elif destino % 2 != 0:
-        print "¡Virgen del carmen, no lo hagas!"
+        print ("¡Virgen del carmen, no lo hagas!")
     else:
-        print "Vaia esto nunca va a aparecer!"
+        print ("Vaia esto nunca va a aparecer!")
 
 importantDecision((random.randrange(10))+1)
 
@@ -24,7 +24,7 @@ ipod_dibujo = ["╔═══╗ ♪", "║███║ ♫", "║ ● ║  ♫",
 def dibujar(indice):
 	contador = 0
 	while contador < indice:
-	    print ipod_dibujo[contador]
+	    print (ipod_dibujo[contador])
 	    contador += 1
 
 dibujar(4)
@@ -36,11 +36,11 @@ notas = ["Fa", "Sol", "La", "Si", "Do", "Re", "Mi"]
 
 # Uso un for para recorrer la lista e imprimir la funcion con todas las notas
 for nota in notas:
-    print nota
+    print (nota)
 
 #For con rangos
 for i in range(0, 15,3):
-	print "Numero %i" % i
+	print ("Numero %i" % i)
 
 for i in "Spelling":
-	print "%s" % i
+	print ("%s" % i)
