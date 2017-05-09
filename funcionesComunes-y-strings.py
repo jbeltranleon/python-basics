@@ -9,7 +9,7 @@ print "El tipo de dato de la palabra es: %s" % type(palabra)
 print range(0, 212,2)
 
 print "NOTAS USANDO sum()"
-primero = 2.9 * 0.24
+primero = float(raw_input('Nota de primer corte'))* 0.24
 segundo = 2.7 * 0.24
 tercero = 3 * 0.32
 auto = 4 * 0.10
