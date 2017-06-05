@@ -4,6 +4,7 @@
 palabra = "Electroencefalografista"
 
 print "La longitud de la palabra %s" % len(palabra)
+print "El ultimo espacio de una string es su logitud -1"
 print "El tipo de dato de la palabra es: %s" % type(palabra)
 
 print range(0, 212,2)
@@ -26,7 +27,10 @@ print sorted([5,6,7,8,2,3,4,5,6,4,6,34,3,3,3,3,4,5,6,7,3])
 print "Esto es todo lo que puedo hacer con una lista: %s" % dir([5,6,7,3])
 print "________________________________________________________________"
 
-print "Aiudaaa %s " % help(map) 
+respuesta = int(raw_input('Deseas ver la ayuda de la funcion map? '))
+
+if respuesta==1:
+	print "Aiudaaa %s " % help(map) 
 
 # Tipado tipo pato :v DuckType
 print "Hola Tarola " * 12
