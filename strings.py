@@ -14,6 +14,14 @@ def main(text):
 
 	print(methods)
 
+	slices(text)
+
+def slices(text):
+	print('\nEntramos a la función de rebanadas')
+	print()
+	ways = [text[1:]]
+	print(ways)
+
 if __name__ == '__main__':
 	text = input('Ingresa una string: ')
 	main(text)
