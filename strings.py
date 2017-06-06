@@ -21,6 +21,7 @@ def main(text):
 	slices(text)
 	palindrome(text)
 	change_word(text)
+	compare(text)
 
 def slices(text):
 	print(Fore.RED+'\nEntramos a la función de rebanadas')
@@ -41,6 +42,14 @@ def palindrome(text):
 def change_word(text):
 	new_string = 'L' + text[1:]
 	print(Fore.GREEN+'\nLa nueva string es: {}'.format(new_string))
+
+def compare(text):
+	if text == 'jhonbeltran.com':
+		print(Fore.YELLOW+'\n¡Esa es mi página web!')
+	elif text > 'z':
+		print(Fore.YELLOW+'\nLa letra {} es mayor que la <<a>>'.format(text[0]))
+	else:
+		print(Fore.YELLOW+'\nLa cadena ha pasado por la función compare(text)')
 
 if __name__ == '__main__':
 	text = input('Ingresa una string: ')
