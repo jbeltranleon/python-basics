@@ -20,6 +20,7 @@ def main(text):
 
 	slices(text)
 	palindrome(text)
+	cycle_palindrome(text)
 	change_word(text)
 	compare(text)
 
@@ -38,6 +39,26 @@ def palindrome(text):
 		print('La cadena {} SI es un palindromo'.format(text))
 	else:
 		print('La cadena {} no es un palindromo'.format(text))
+
+def cycle_palindrome(text):
+	print(Fore.BLUE+'\nVamos a averiguar si la palabra es un palindromo usaremos ciclos')
+	without_spaces_text = text.replace(' ', '')
+
+	reversed_letters = []
+
+	for letter in text:
+		reversed_letters.insert(0, letter)
+
+	reversed_word = ''.join(reversed_letters)
+	print(reversed_word)
+
+	if without_spaces_text == reversed_word:
+		print('La cadena {} SI es un palindromo'.format(text))
+	else:
+		print('La cadena {} no es un palindromo'.format(text))
+
+
+
 
 def change_word(text):
 	new_string = 'L' + text[1:]
