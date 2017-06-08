@@ -3,20 +3,22 @@ from datetime import datetime
 from curtsies import Input
 
 def start_stop():
+    times = list()
     with Input(keynames='curses') as input_generator:
         for e in input_generator:
             if e == '\n':
-                print('Stop')
+                break
             else:
                 print(repr('Start/Stop'))
-                store_time()
+                store_time(times)
 
-def store_time():
-    times = list()
+    for time in times:
+        print('El resultado del {} tiempo es de {}'.format(times.index(time)+1, time))
+
+def store_time(times):
     times.append(datetime.now())
-    print(times[0])
 
 
 if __name__ == '__main__':
-    print('Para cancelar presiona Ctrl c')
+    print('Para terminar y ver los datos presiona Enter')
     start_stop()
