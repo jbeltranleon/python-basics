@@ -1,5 +1,5 @@
 from colorama import init, Back
-from datetime import datetime
+from datetime import datetime, time
 from curtsies import Input
 
 def start_stop():
@@ -16,7 +16,7 @@ def start_stop():
         print('El resultado del {} tiempo es de {}'.format(times.index(time)+1, time))
 
 def store_time(times):
-    times.append(datetime.now())
+    times.append(datetime.now().time())
 
 
 if __name__ == '__main__':
