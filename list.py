@@ -13,7 +13,7 @@ def start_stop():
                 store_time(times)
 
     for time in times:
-        print('El resultado del {} tiempo es de {}'.format(times.index(time)+1, time))
+        print(Back.BLUE+'El resultado del {} tiempo es de {}'.format(times.index(time)+1, time))
 
 def store_time(times):
     times.append(datetime.now().time())
