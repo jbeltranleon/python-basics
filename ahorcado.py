@@ -91,8 +91,9 @@ def run():
         current_letter = str(input('Escoge una letra: '))
 
 def random_word():
-    index = random.randint(0, len(WORDS) - 1)
-    return WORDS[index]
+    # index = random.randint(0, len(WORDS) - 1)
+    # return WORDS[index]
+    return random.choice(WORDS)
 
 def display_board(hidden_word, tries):
     print(IMAGES[tries])
