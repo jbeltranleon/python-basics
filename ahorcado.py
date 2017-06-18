@@ -90,6 +90,20 @@ def run():
         display_board(hidden_word, tries)
         current_letter = str(input('Escoge una letra: '))
 
+        letter_indexes = []
+        for i in range(len(word)):
+            if word[i] == current_letter:
+                letter_indexes.append(i)
+
+        if len(letter_indexes) == 0:
+            tries +=1
+
+        else:
+            for i in letter_indexes:
+                hidden_word[i] = current_letter
+
+            letter_indexes = []
+
 def random_word():
     # index = random.randint(0, len(WORDS) - 1)
     # return WORDS[index]
