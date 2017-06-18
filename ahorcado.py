@@ -98,11 +98,26 @@ def run():
         if len(letter_indexes) == 0:
             tries +=1
 
+            if tries == 7:
+                display_board(hidden_word, tries)
+                print('')
+                print('¡Perdiste!')
+                print('La palabra correcta era {}'.format(word))
+                break
+
         else:
             for i in letter_indexes:
                 hidden_word[i] = current_letter
 
             letter_indexes = []
+
+            try:
+                hidden_word.index('-')
+            except ValueError:
+                display_board(hidden_word, tries)
+                print('')
+                print('¡Ganaste!')
+                break
 
 def random_word():
     # index = random.randint(0, len(WORDS) - 1)
