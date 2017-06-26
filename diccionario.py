@@ -3,7 +3,11 @@
 
 mi_dict = {}
 # mi_dict = dict()
-mi_dict['llave'] = 'valor'
-otro_dict = {'otra llave': 'otro valor'}
+mi_dict['first_element'] = 'Jhon'
+mi_dict['second_element'] = 'Developer'
+print(mi_dict['first_element'])
+print(mi_dict['second_element'])
 print(mi_dict)
+
+otro_dict = {'otra llave': 'otro valor'}
 print(otro_dict)
