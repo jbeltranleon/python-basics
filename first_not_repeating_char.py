@@ -15,7 +15,7 @@ def first_not_repeating_char(char_secuence):
 
 	final_letters = []
 
-	for key, value in items():
+	for key, value in seen_letters.items():
 		if value[1] == 1:
 			final_letters.append( (key, value[0]) )
 
