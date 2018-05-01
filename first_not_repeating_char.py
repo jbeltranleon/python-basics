@@ -19,9 +19,9 @@ def first_not_repeating_char(char_secuence):
 		if value[1] == 1:
 			final_letters.append( (key, value[0]) )
 
-	#La función lambda hace lo mismo que sort_order()
-	# def sort_order(value):
-	# 	return value[1]
+			#La función lambda hace lo mismo que sort_order()
+			# def sort_order(value):
+			# 	return value[1]
 
 	not_repeated_letters = sorted(final_letters, key=lambda value: value[1])
 
