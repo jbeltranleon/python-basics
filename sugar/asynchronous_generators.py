@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.6
 import asyncio
 async def turno(espera, cantidad):
-    """Prooduce números de 0 a *cantidad* cada *espera* segundos."""
+    """Produce números de 0 a *cantidad* cada *espera* segundos."""
     for i in range(cantidad):
         yield i
         await asyncio.sleep(espera)
